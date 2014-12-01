@@ -1,0 +1,38 @@
+{% include htwo.html %}
+<div id="single" class="cl">
+	<div class="single-content fl">
+		<h2>{{ page.title }}</h2>
+		{{ content }}
+		<p>{{ page.date | date_to_string }}</p>
+		<div class="single-around">
+			<ul>
+				<li>上一篇：{% if page.previous %}<a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.title | truncatewords:5 }}</a>{% else %}我本沉默{% endif %}</li>
+				<li>下一篇：{% if page.next %}<a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title | truncatewords:5 }}</a>{% else %}我本沉默{% endif %}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="single-related fr">
+		<h2>相关文章：</h2>
+		<ul>
+			{% for post in site.categories.chenmo limit:5 %}
+			<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+		<ul>
+			{% for post in site.categories.fugu limit:5 %}
+			<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+		<ul>
+			{% for post in site.categories.dudu limit:5 %}
+			<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+		<ul>
+			{% for post in site.categories.yuanshi limit:5 %}
+			<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+{% include footer.html %}

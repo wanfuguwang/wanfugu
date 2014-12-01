@@ -1,0 +1,37 @@
+---
+title: 我本沉默_1.76复古传奇_嘟嘟传奇_原始传奇_玩复古发布网
+keywords: 我本沉默,1.76复古传奇,嘟嘟传奇,原始传奇,玩复古发布网
+description: 玩复古发布网专注于我本沉默、1.76复古、嘟嘟等原始复古传奇的发布，为所有复古传奇爱好者提供最有用的信息来源。
+---
+{% include header.html %}
+	<div id="post" class="cl">
+		<div class="post-list br fl">
+			<ul>
+				{% for post in site.categories.chenmo %}
+				<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="post-list br fl">
+			<ul>
+				{% for post in site.categories.fugu %}
+				<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="post-list br fl">
+			<ul>
+				{% for post in site.categories.dudu %}
+				<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="post-list border-none fl">
+			<ul>
+				{% for post in site.categories.yuanshi %}
+				<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+{% include footer.html %}

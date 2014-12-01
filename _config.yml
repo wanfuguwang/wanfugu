@@ -1,0 +1,5 @@
+baseurl: /test
+permalink: /:categories/:title.html
+markdown: rdiscount
+pygments: true
+auto: true
