@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>我本沉默_1.76复古传奇_嘟嘟传奇_原始传奇_玩复古发布网</title>
- <link href="http://www.worldhello.net/atom.xml" rel="self"/>
- <link href="http://www.worldhello.net/"/>
+ <link href="http://www.wanfugu.com/atom.xml" rel="self"/>
+ <link href="http://www.wanfugu.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://www.worldhello.net/</id>
+ <id>http://www.wanfugu.com/</id>
  <author>
    <name>玩复古发布网</name>
    <email>worldhello.net@gmail.com</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts limit:500 %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://www.worldhello.net{{ post.url }}"/>
+   <link href="http://www.wanfugu.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://www.worldhello.net{{ post.id }}</id>
+   <id>http://www.wanfugu.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
