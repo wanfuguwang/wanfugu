@@ -11,7 +11,7 @@ layout: nil
  <id>http://www.wanfugu.com/</id>
  <author>
    <name>玩复古发布网</name>
-   <email>worldhello.net@gmail.com</email>
+   <email>wanfuguwang@gmail.com</email>
  </author>
  
  {% for post in site.posts limit:500 %}
